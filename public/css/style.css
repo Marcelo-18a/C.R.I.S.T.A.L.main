@@ -20,14 +20,7 @@ body {
 }
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    color: #000;
-    background: linear-gradient(to right, #000, #222);
-}
+
 
 .logo img {
     height: 40px;

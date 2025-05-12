@@ -3,6 +3,7 @@ import express from "express";
 import cadUsuariosControll from "./controllers/cadUsuariosControll.js";
 import usuariosControll from "./controllers/usuariosControll.js";
 import connection from "./config/sequelize-config.js";
+import evasaoControll from "./controllers/evasaoControll.js"
 
 // Inicializando o app Express
 const app = express();
@@ -41,6 +42,7 @@ app.get("/unidades", (req, res) => {
 // Definindo rotas
 app.use("/", usuariosControll);
 app.use("/", cadUsuariosControll);
+app.use("/", evasaoControll);
 
 // Rota inicial
 app.get("/", (req, res) => {
